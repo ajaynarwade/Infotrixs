@@ -4,7 +4,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
-
+<html>
 <head>
     <meta charset="ISO-8859-1">
     <title>View ToDo Item List</title>
@@ -13,33 +13,34 @@
         	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-        <script
-        	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script
-        	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
+        
     <style>
+    
         a{
             color: white;
         }
         a:hover {
             color: white;
             text-decoration: none;
+            
         }
     </style>
 
 </head>
-<body>
+<body style="background-color: #9e4df0a8;">
 
     <div class="container">
 
-        <h1 class="p-3"> ToDo Item List</h1>
+        <!-- <h1 class="p-3"> ToDo Item List</h1> -->
 
-        <form:form>
+        <form:form style="box-shadow: #8536f091">
 
-            <table class="table table-bordered">
+            <table class="table table-bordered mt-5">
+                <tr>
+                    <th colspan="7" style="text-align: center;">
+                        ToDo Item List
+                    </th>
+                </tr>
             	<tr>
             		<th>Id</th>
             		<th>Title</th>
@@ -78,6 +79,12 @@
         </button>
 
     </div>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
     <script th:inline="javascript">
                 window.onload = function() {
@@ -112,6 +119,7 @@
                         }
         	    }
             </script>
+
 
 </body>
 
